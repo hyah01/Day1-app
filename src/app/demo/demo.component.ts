@@ -12,6 +12,7 @@ export class DemoComponent {
   category:number = 0;
 
   constructor(srv: AmaJohnService){
+    // switch case provide different data
     switch(this.category){
       case 0:
         this.items = srv.getItemsTech();
