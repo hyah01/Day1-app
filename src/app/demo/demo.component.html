@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+</head>
+<body>
+    <div class="container">
+        <div *ngIf = "items.length > 0 ;else empty" class="item-wrapper">
+            <div *ngFor="let item of items" class="item-container">
+                <div class="item">
+                    <div class="title">
+                        <h3>{{item.name}}</h3>
+                        <p>${{item.price}}</p>
+                    </div>
+                    <div class="item-body">
+                        <p>{{item.desc}}</p>
+                    </div>
+    
+                </div>
+            </div>
+        </div>
+        <ng-template #empty>
+            No Books Available !!
+        </ng-template>
+    </div>
+</body>
+</html>
