@@ -19,6 +19,8 @@
 }
 .item:hover{
     background-color: rgb(102, 191, 226);
+    -webkit-transform: scale(1.05);
+    cursor: pointer;
 }
 
 .item {
